@@ -49,6 +49,7 @@ ln -sf /dev/stdout $SPARK_WORKER_LOG
 
 COPY .config.py /
 COPY start-spark.sh /
+COPY ojdbc.jar /
 CMD ["/bin/bash","/start-spark.sh"]
 
 
