@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cp /ojdbc8.jar /opt/spark/jars
 . "/opt/spark/bin/load-spark-env.sh"
 
 if [ "$SPARK_WORKLOAD" == "master" ];
