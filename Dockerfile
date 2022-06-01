@@ -49,7 +49,7 @@ ln -sf /dev/stdout $SPARK_WORKER_LOG
 
 COPY .config.py /
 COPY start-spark.sh /
-COPY ojdbc.jar /opt/spark/jars
+COPY http://kickstart.slc.ere/ojdbc8.jar /opt/spark/jars
 CMD ["/bin/bash","/start-spark.sh"]
 
 
